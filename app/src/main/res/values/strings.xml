@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tvam Health</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="if_you_have_a_smart_phone_thn_please_enter_your_mobile_no">If you have a smart phone then please enter your mobile no</string>
+    <string name="customer_name">Customer Name*</string>
+    <string name="Other">Other</string>
+    <string name="Female">Female</string>
+    <string name="male">Male</string>
+    <string name="age">Age*</string>
+    <string name="proceed">Proceed</string>
+    <string name="buy">Buy</string>
+    <string name="please_wait">please wait...</string>
+    <string name="name_regex">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz.</string>
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="Languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
+</resources>

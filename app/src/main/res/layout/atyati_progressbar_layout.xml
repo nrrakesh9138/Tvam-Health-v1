@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+android:backgroundTint="@color/light_grey"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/circular_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+
+        android:indeterminateDrawable="@drawable/circular_atyati_progressbar"
+        android:progress="0" />
+    <ImageView
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_atyati_progress_icon"/>
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="@string/wait"/>-->
+</RelativeLayout>

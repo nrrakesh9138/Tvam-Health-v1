@@ -1,0 +1,206 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="TextInputLayout">
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+    <style name="tvToolBarStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">#de000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextCategoryTypeHeader">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextCategoryTypeBody">
+        <item name="android:textSize">@dimen/textSize_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorGrey</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--   <style name="spinnerDropdown">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+    </style>-->
+
+    <style name="spinnerDropdown" parent="Widget.AppCompat.PopupMenu.Overflow">
+
+        <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+    </style>
+
+    <style name="itemTextStyle.AppTheme" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+<!--        <item name="android:textColor">@drawable/color_item_popup</item>-->
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="tv_light_hint">
+
+        <item name="android:gravity">center_horizontal</item>
+
+        <item name="android:textSize">12sp</item>
+
+        <item name="android:lineSpacingExtra">-4sp</item>
+
+        <item name="android:textColor">#61000000</item>
+    </style>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+
+
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/black</item>
+        <!-- //<item name="color">@android:color/white</item>-->
+    </style>
+
+    <style name="EditTextOtp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/dp_20</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/dp_13</item>
+        <item name="android:paddingBottom">@dimen/dp_13</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">-</item>
+        <item name="android:textColor">@color/font_hint_color</item>
+<!--        <item name="android:textCursorDrawable">@drawable/drawable_cursor</item>-->
+<!--        <item name="android:background">@drawable/bottom_border_layout</item>-->
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="TextViewTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#8a000000</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="TextViewBody">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#de000000</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+
+    <style name="ViewMargin">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+    <style name="CustomProgressBarTheme">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="TextViewSpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <style name="TextViewSpinnerDropDownItem" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@android:color/black</item>
+
+        <item name="android:background">@android:color/white</item>
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+
+
+    <style name="AppThemeSpinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:spinnerItemStyle">@style/TextViewSpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/TextViewSpinnerDropDownItem</item>
+        <!-- Override the dropdown item in support library -->
+        <item name="spinnerDropDownItemStyle">@style/TextViewSpinnerDropDownItem</item>
+    </style>
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+    </style>
+    <style name="textStyle">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:lineSpacingExtra">-4sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ProgressBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/white_color</item>
+    </style>
+
+    <style name="dash_title">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="dash_value">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/text_color_heading</item>
+    </style>
+    <style name="DsbButton" parent="@android:style/Widget.Button.Small">
+<!--        <item name="android:background">@drawable/button_login</item>-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingLeft">@dimen/dp_20</item>
+        <item name="android:paddingRight">@dimen/dp_20</item>
+        <item name="android:paddingTop">@dimen/dp_20</item>
+        <item name="android:paddingBottom">@dimen/dp_20</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="MyCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+
+        <item name="backgroundColor">#FEE2BF</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">50dp</item>
+        <item name="cornerSizeTopLeft">50dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+</resources>
