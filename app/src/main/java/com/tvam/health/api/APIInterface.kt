@@ -1,21 +1,21 @@
-package com.example.tvamhealth.api
+package com.tvam.health.api
 
-import com.example.tvamhealth.SubscriptionsResponse
+import com.tvam.health.SubscriptionsResponse
 import retrofit2.Call
 import retrofit2.http.*
 
 interface APIInterface {
 
 
-    @POST("/PatientInformationDetails")
+    @POST("/Health/PatientInformationDetails")
     @Headers("Content-Type: application/json")
     fun patientInformation(@Body patientInformationDetailsRequest: PatientInformationDetailsRequest): Call<PatientInformationDetailsrResponse>
 
-    @POST("/UserLogin")
+    @POST("/Health/UserLogin")
     @Headers("Content-Type: application/json")
     fun userLogin(@Body userLoginRequest: UserLoginRequest): Call<UserLoginResponse>
 
-    @GET("/Subscriptions")
+    @GET("/Health/Subscriptions")
     @Headers("Content-Type: application/json")
     fun getSubscriptions(): Call<SubscriptionsResponse>
 

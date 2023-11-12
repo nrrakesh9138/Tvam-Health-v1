@@ -1,4 +1,4 @@
-package com.example.tvamhealth
+package com.tvam.health
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,13 +8,16 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.tvamhealth.api.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import com.tvam.health.api.APIBuilder
+import com.tvam.health.api.APIInterface
+import com.tvam.health.api.UserLoginRequest
+import com.tvam.health.api.UserLoginResponse
 import utils.AppUtils
 import utils.CustomProgressBar
 

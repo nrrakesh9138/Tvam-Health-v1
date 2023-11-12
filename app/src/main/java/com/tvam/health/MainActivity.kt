@@ -1,16 +1,15 @@
-package com.example.tvamhealth
+package com.tvam.health
 
 import SubscriptionAdapter
 import android.content.Intent
 import android.os.Bundle
-import android.text.InputFilter
 import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.example.tvamhealth.api.APIBuilder
-import com.example.tvamhealth.api.APIInterface
+import com.tvam.health.api.APIBuilder
+import com.tvam.health.api.APIInterface
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -73,7 +72,7 @@ class MainActivity : AppCompatActivity() {
         radio_group = findViewById(R.id.radio_group)
         radio1_group = findViewById(R.id.radio1_group)
         spinner = findViewById(R.id.spinnerDescription)
-        subscrtion_text = findViewById(R.id.subscrtion_text)
+//        subscrtion_text = findViewById(R.id.subscrtion_text)
 
 
 //        val intSelectButton: Int = radio_group!!.checkedRadioButtonId
@@ -220,7 +219,7 @@ class MainActivity : AppCompatActivity() {
                     var subscription = response.body()?.data
                     if (subscription != null) {
 
-                        var list1 =DataSubscription(0,"Subscription Type","","","")
+                        var list1 = DataSubscription(0,"Subscription Type","","","")
 
                        // list.addAll("")
                         subscription.add(0,list1)

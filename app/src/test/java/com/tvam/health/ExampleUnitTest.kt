@@ -1,4 +1,4 @@
-package com.example.tvamhealth
+package com.tvam.health
 
 import org.junit.Test
 

@@ -1,33 +1,18 @@
 package utils
 
 
-import android.app.Activity
 import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
-import android.content.Intent
 import android.content.SharedPreferences
-import android.graphics.Color
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
-import android.os.Build
-import android.text.TextUtils
-import android.view.View
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.res.ResourcesCompat
 import androidx.core.util.Preconditions.checkArgument
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
-import com.example.tvamhealth.R
 
 
-import com.google.android.material.snackbar.Snackbar
 import com.google.common.util.concurrent.ListenableFuture
 //import com.google.common.util.concurrent.ListenableFuture
-import java.io.IOException
-import java.net.SocketTimeoutException
 import java.text.SimpleDateFormat
 import java.util.*
 

@@ -1,13 +1,11 @@
-package com.example.tvamhealth
+package com.tvam.health
 
-import android.os.Parcel
-import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 
 data class SubscriptionsResponse (
-        @SerializedName("data") val data: ArrayList<DataSubscription>?,
-        @SerializedName("ResponseCode") val ResponseCode: String?,
-        @SerializedName("Message") val message: String?,
+    @SerializedName("data") val data: ArrayList<DataSubscription>?,
+    @SerializedName("ResponseCode") val ResponseCode: String?,
+    @SerializedName("Message") val message: String?,
         )
 
 

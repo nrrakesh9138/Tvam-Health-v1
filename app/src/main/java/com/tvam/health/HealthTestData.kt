@@ -1,16 +1,15 @@
-package com.example.tvamhealth
+package com.tvam.health
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
 import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.example.tvamhealth.api.APIBuilder
-import com.example.tvamhealth.api.APIInterface
-import com.example.tvamhealth.api.PatientInformationDetailsRequest
-import com.example.tvamhealth.api.PatientInformationDetailsrResponse
+import com.tvam.health.api.APIBuilder
+import com.tvam.health.api.APIInterface
+import com.tvam.health.api.PatientInformationDetailsRequest
+import com.tvam.health.api.PatientInformationDetailsrResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -18,10 +17,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import utils.AppUtils
-import utils.Constants
 import utils.CustomProgressBar
-import java.util.regex.Matcher
-import java.util.regex.Pattern
 
 class HealthTestData : AppCompatActivity() {
     var custmoblie = ""

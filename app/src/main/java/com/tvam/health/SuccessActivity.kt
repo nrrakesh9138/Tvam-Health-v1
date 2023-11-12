@@ -1,4 +1,4 @@
-package com.example.tvamhealth
+package com.tvam.health
 
 import android.Manifest
 import android.bluetooth.BluetoothAdapter

@@ -9,7 +9,7 @@
     <string name="male">Male</string>
     <string name="age">Age*</string>
     <string name="proceed">Proceed</string>
-    <string name="buy">Buy</string>
+    <string name="Submit">Buy</string>
     <string name="please_wait">please wait...</string>
     <string name="name_regex">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz.</string>
     <string name="selected_item">Selected item:</string>

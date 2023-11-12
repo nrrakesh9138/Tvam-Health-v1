@@ -4,14 +4,12 @@ import android.app.Dialog
 import android.content.Context
 import android.graphics.BlendMode
 import android.graphics.BlendModeColorFilter
-import android.graphics.Color
 import android.graphics.PorterDuff
 import android.graphics.drawable.Drawable
 import android.os.Build
 import android.view.LayoutInflater
 import androidx.annotation.NonNull
-import androidx.core.content.res.ResourcesCompat
-import com.example.tvamhealth.R
+import com.tvam.health.R
 //import kotlinx.android.synthetic.main.atyati_progressbar_layout.view.*
 
 

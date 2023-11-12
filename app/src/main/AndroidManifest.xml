@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.tvamhealth">
+    package="com.tvam.health">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -42,7 +42,7 @@
         android:theme="@style/Theme.TvamHealth.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name="com.tvam.health.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -52,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SuccessActivity"
+            android:name="com.tvam.health.SuccessActivity"
             android:exported="false" >
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
@@ -61,10 +61,10 @@
 <!--            </intent-filter>-->
         </activity>
         <activity
-            android:name=".HealthTestData"
+            android:name="com.tvam.health.HealthTestData"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.tvam.health.MainActivity"
             android:exported="false">
 
         </activity>

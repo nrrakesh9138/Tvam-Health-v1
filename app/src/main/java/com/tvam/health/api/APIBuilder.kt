@@ -1,26 +1,13 @@
-package com.example.tvamhealth.api
-
-import android.app.Activity
-import android.content.Context
-import android.content.SharedPreferences
-import android.text.TextUtils
-import android.util.Log
+package com.tvam.health.api
 
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.IOException
-import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit
-import android.R
-import android.os.Build
-import android.widget.Toast
-import com.example.tvamhealth.BuildConfig
+import com.tvam.health.BuildConfig
 
 import okhttp3.*
-import java.io.InputStream
-import java.security.KeyStore
 import java.security.SecureRandom
 import java.security.cert.CertificateException
 import java.security.cert.X509Certificate
@@ -35,7 +22,7 @@ class APIBuilder() {
    // val appUtils  =AppUtils()
     //var context:Context= context!!
 
-    private var baseUrl ="https://healthappmicroservice.azurewebsites.net";
+    private var baseUrl ="https://tvamdevhealthmicroservice.azurewebsites.net";
 
 
 

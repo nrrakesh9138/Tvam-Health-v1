@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/gray"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.tvam.health.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -211,13 +211,13 @@
             android:textAlignment="viewStart"
              />
 
-        <TextView
-            android:id="@+id/subscrtion_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10">
+<!--        <TextView-->
+<!--            android:id="@+id/subscrtion_text"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/dp_10">-->
 
-        </TextView>
+<!--        </TextView>-->
 
         <Button
             android:id="@+id/procced"
