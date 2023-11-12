@@ -227,7 +227,7 @@
             android:layout_marginTop="30dp"
             android:backgroundTint="@color/orange"
             android:gravity="center"
-            android:text="@string/buy"
+            android:text="@string/Submit"
             android:layout_marginBottom="@dimen/dp_40"
             android:textColor="@color/white">
 
