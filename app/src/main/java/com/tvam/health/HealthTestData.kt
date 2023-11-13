@@ -71,7 +71,7 @@ class HealthTestData : AppCompatActivity() {
         smart_phone = intent.getStringExtra("smart_phone").toString()
         gender = intent.getStringExtra("gender").toString()
         isSmartPhone = intent.getStringExtra("smart_phone_vis").toString()
-        subscriptionsType = intent.getStringExtra("SubscriptionsType").toString()
+//        subscriptionsType = intent.getStringExtra("SubscriptionsType").toString()
         customerName = appUtils.getSharedPreference(applicationContext, "CustomerName").toString()
         radio_group_uri_pro = findViewById(R.id.radio_group_uri_pro)
         radio_group_uri_suger = findViewById(R.id.radio_group_uri_suger)

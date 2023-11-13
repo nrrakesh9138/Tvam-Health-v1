@@ -200,16 +200,16 @@
 
         </LinearLayout>
 
-        <Spinner
-            android:id="@+id/spinnerDescription"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_50"
-            android:layout_marginTop="@dimen/dp_20"
-            android:background="@drawable/rectangel_gray_bg"
-            android:spinnerMode="dropdown"
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerDescription"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/dp_50"-->
+<!--            android:layout_marginTop="@dimen/dp_20"-->
+<!--            android:background="@drawable/rectangel_gray_bg"-->
+<!--            android:spinnerMode="dropdown"-->
 
-            android:textAlignment="viewStart"
-             />
+<!--            android:textAlignment="viewStart"-->
+<!--             />-->
 
 <!--        <TextView-->
 <!--            android:id="@+id/subscrtion_text"-->

@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         other = findViewById(R.id.other)
         radio_group = findViewById(R.id.radio_group)
         radio1_group = findViewById(R.id.radio1_group)
-        spinner = findViewById(R.id.spinnerDescription)
+//        spinner = findViewById(R.id.spinnerDescription)
 //        subscrtion_text = findViewById(R.id.subscrtion_text)
 
 
@@ -175,10 +175,11 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "please enter valid age", Toast.LENGTH_LONG)
                     .show()
 
-            }else if(mSelectedPostion==0){
-                Toast.makeText(this, "please select Subscriptions Type", Toast.LENGTH_LONG)
-                    .show()
             }
+//            else if(mSelectedPostion==0){
+//                Toast.makeText(this, "please select Subscriptions Type", Toast.LENGTH_LONG)
+//                    .show()
+//            }
             else {
                 val intSelectGenderButton: Int = radio1_group!!.checkedRadioButtonId
                 customer_gender = findViewById(intSelectGenderButton)
@@ -191,7 +192,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("gender", gender)
                 intent.putExtra("smart_phone_vis", smart_phone_vis)
                 intent.putExtra("customerName", customerName)
-                intent.putExtra("SubscriptionsType",subscriptionsType)
+//                intent.putExtra("SubscriptionsType",subscriptionsType)
 
 
 
