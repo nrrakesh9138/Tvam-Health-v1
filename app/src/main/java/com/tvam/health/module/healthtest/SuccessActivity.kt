@@ -1,4 +1,4 @@
-package com.tvam.health
+package com.tvam.health.module.healthtest
 
 import android.Manifest
 import android.bluetooth.BluetoothAdapter
@@ -23,6 +23,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.leopard.api.Printer
 import com.leopard.api.Setup
+import com.tvam.health.module.registration.MainActivity
+import com.tvam.health.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

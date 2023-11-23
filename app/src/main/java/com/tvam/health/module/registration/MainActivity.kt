@@ -1,4 +1,4 @@
-package com.tvam.health
+package com.tvam.health.module.registration
 
 import SubscriptionAdapter
 import android.content.Intent
@@ -8,8 +8,12 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.tvam.health.R
 import com.tvam.health.api.APIBuilder
 import com.tvam.health.api.APIInterface
+import com.tvam.health.models.response.DataSubscription
+import com.tvam.health.models.response.SubscriptionsResponse
+import com.tvam.health.module.healthtest.HealthTestData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

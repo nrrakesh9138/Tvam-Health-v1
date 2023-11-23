@@ -1,6 +1,10 @@
 package com.tvam.health.api
 
-import com.tvam.health.SubscriptionsResponse
+import com.tvam.health.models.request.PatientInformationDetailsRequest
+import com.tvam.health.models.request.UserLoginRequest
+import com.tvam.health.models.response.PatientInformationDetailsrResponse
+import com.tvam.health.models.response.SubscriptionsResponse
+import com.tvam.health.models.response.UserLoginResponse
 import retrofit2.Call
 import retrofit2.http.*
 

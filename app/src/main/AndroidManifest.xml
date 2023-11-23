@@ -42,7 +42,7 @@
         android:theme="@style/Theme.TvamHealth.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name="com.tvam.health.LoginActivity"
+            android:name="com.tvam.health.module.login.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -52,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tvam.health.SuccessActivity"
+            android:name="com.tvam.health.module.healthtest.SuccessActivity"
             android:exported="false" >
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
@@ -61,10 +61,10 @@
 <!--            </intent-filter>-->
         </activity>
         <activity
-            android:name="com.tvam.health.HealthTestData"
+            android:name="com.tvam.health.module.healthtest.HealthTestData"
             android:exported="false" />
         <activity
-            android:name="com.tvam.health.MainActivity"
+            android:name="com.tvam.health.module.registration.MainActivity"
             android:exported="false">
 
         </activity>

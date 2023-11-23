@@ -4,7 +4,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
-import com.tvam.health.DataSubscription
+import com.tvam.health.models.response.DataSubscription
 import com.tvam.health.R
 
 class SubscriptionAdapter(val context: Context, var dataSource: List<DataSubscription>) : BaseAdapter() {

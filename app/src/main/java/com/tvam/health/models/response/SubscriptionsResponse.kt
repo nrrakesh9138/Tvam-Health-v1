@@ -1,4 +1,4 @@
-package com.tvam.health
+package com.tvam.health.models.response
 
 import com.google.gson.annotations.SerializedName
 

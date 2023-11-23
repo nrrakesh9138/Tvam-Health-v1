@@ -1,4 +1,4 @@
-package com.tvam.health
+package com.tvam.health.module.healthtest
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,10 +6,11 @@ import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.tvam.health.R
 import com.tvam.health.api.APIBuilder
 import com.tvam.health.api.APIInterface
-import com.tvam.health.api.PatientInformationDetailsRequest
-import com.tvam.health.api.PatientInformationDetailsrResponse
+import com.tvam.health.models.request.PatientInformationDetailsRequest
+import com.tvam.health.models.response.PatientInformationDetailsrResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
