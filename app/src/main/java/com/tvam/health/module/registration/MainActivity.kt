@@ -1,6 +1,7 @@
 package com.tvam.health.module.registration
 
 import SubscriptionAdapter
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import com.tvam.health.api.APIBuilder
 import com.tvam.health.api.APIInterface
 import com.tvam.health.models.response.DataSubscription
 import com.tvam.health.models.response.SubscriptionsResponse
+import com.tvam.health.module.healthtest.HealthTest
 import com.tvam.health.module.healthtest.HealthTestData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -22,6 +24,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import utils.AppUtils
 import utils.CustomProgressBar
+import java.util.UUID
 
 
 class MainActivity : AppCompatActivity() {
@@ -158,8 +161,7 @@ class MainActivity : AppCompatActivity() {
 
         if (radio_group!!.getCheckedRadioButtonId() == -1) {
             Toast.makeText(this, "Please select either one ", Toast.LENGTH_LONG).show();
-        } else
-            if (custmoblie!!.getText().toString().isEmpty()) {
+        } else if (custmoblie!!.getText().toString().isEmpty()) {
                 Toast.makeText(this, "please enter mobile number ", Toast.LENGTH_LONG).show()
             }else if (custmoblie!!.getText().toString().length !=10) {
                 Toast.makeText(this, "please enter 10 digit mobile number", Toast.LENGTH_LONG)
@@ -188,13 +190,14 @@ class MainActivity : AppCompatActivity() {
                 val intSelectGenderButton: Int = radio1_group!!.checkedRadioButtonId
                 customer_gender = findViewById(intSelectGenderButton)
                 gender = customer_gender.text.toString()
-                val intent = Intent(this@MainActivity, HealthTestData::class.java)
-                intent.putExtra("custmoblie", custmoblie!!.getText().toString())
-                intent.putExtra("customer_age", customer_age!!.getText().toString())
-                intent.putExtra("customer_name", customer_name!!.getText().toString())
-                intent.putExtra("smart_phone", smart_phone!!.getText().toString())
-                intent.putExtra("gender", gender)
-                intent.putExtra("smart_phone_vis", smart_phone_vis)
+                val guid = UUID.randomUUID().toString()
+                val intent = Intent(this, HealthTest::class.java)
+//                intent.putExtra("custmoblie", custmoblie!!.getText().toString())
+                intent.putExtra("customer_age", customer_age!!.text.toString())
+                intent.putExtra("customer_name", customer_name!!.text.toString())
+//                intent.putExtra("smart_phone", smart_phone!!.getText().toString())
+                intent.putExtra("uid", guid)
+//                intent.putExtra("smart_phone_vis", smart_phone_vis)
                 intent.putExtra("customerName", customerName)
 //                intent.putExtra("SubscriptionsType",subscriptionsType)
 
@@ -202,7 +205,11 @@ class MainActivity : AppCompatActivity() {
 
 
 
-                startActivity(intent);
+                try{
+                    startActivity(intent);
+                } catch(e: ActivityNotFoundException) {
+                    Toast.makeText(this, "There is no package available in android", Toast.LENGTH_LONG).show();
+                }
             }
     }
 

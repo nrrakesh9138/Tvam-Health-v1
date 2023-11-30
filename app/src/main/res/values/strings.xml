@@ -13,6 +13,7 @@
     <string name="please_wait">please wait...</string>
     <string name="name_regex">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz.</string>
     <string name="selected_item">Selected item:</string>
+    <string name="start_test">Start Test</string>
 
     <string-array name="Languages">
         <item>Java</item>
